@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Wel;
+    src: url(fonts/Welroseltone.otf) format('opentype');
+}
+@font-face{
+    font-family: Rosalia;
+    src: url(fonts/Rosalia.otf) format('opentype');
+}
+@font-face{
+    font-family: Barbie;
+    src: url(fonts/Barbie.otf) format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+:root{
+    --cor0: #C5EBD6;
+    --cor1: #81EEB2;
+    --cor2: #5A6B62;
+    --cor3: #3A6B50;
+    --cor4: #9AB8A7;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: Wel, cursive;
+    --fonte-alternativa1: Rosalia, cursive;
+    --fonte-alternativa2: Barbie, cursive;
+    --fonte-alternativa3: 'Lumanosimo', 'Lugrasimo', cursive;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+h1{
+    text-align: center;
+    color: var(--cor3);
+    font-family: var(--fonte-alternativa2);
+}
+h2{
+    color: var(--cor2);
+    font-family: var(--fonte-alternativa2);
+    font-weight: bold;
+    font-size: 40px;
+}
+h3{
+    font-family: var(--fonte-alternativa3);
+}
+p{
+    text-align: justify;
+    font-family: var(--fonte-alternativa1);
+}

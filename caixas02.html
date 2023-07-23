@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: darkred;
+        }
+        header{
+            background-color: green;
+            border: 10px solid white;
+            margin: auto;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        nav{
+            text-align: center;
+            font-weight: bold;
+            background-color: rgb(27, 27, 3);
+            box-shadow: 1px 1px 1px 1px beige;
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-right: 30px;
+            text-shadow: 1px 1px 1px 1px rebeccapurple;
+            
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            text-shadow: 1px 1px 2px white;
+        }
+        h2{
+            font-weight: bold;
+        }
+        a{
+            color: white;
+        }
+        p{
+            text-align: justify;
+        }
+        main{
+            background-color: rgb(104, 70, 28);
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: rgb(97, 97, 133);
+            border: 5px solid black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        aside{
+            text-align: right;
+            font-weight: bold;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Título do artigo sobre assuntos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, cumque dolorum? Hic sunt obcaecati nam error suscipit veritatis, facilis ipsum minus earum ducimus doloremque illum distinctio. Unde vel ducimus nostrum.</p>
+                <aside>
+                    Artigo criado pelo lorem.
+                </aside>
+            </article>           
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Título do Artigo da seção de Noticias</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio cupiditate magnam dolorem recusandae ea id voluptas enim explicabo! Nam dolor, corporis ratione suscipit voluptas quod expedita mollitia non nobis. Perferendis.</p>
+                <aside>
+                    Artigo escrito por Fulano de tal.
+                </aside>
+            </article>
+            <article>
+                <h2>Título de outro artigo</h2>
+                <p>conteúdo do artigo... Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti, quam exercitationem, vero odit mollitia sed eum aut porro itaque fugit sequi minus, voluptate quasi dignissimos! Explicabo, fugiat. Reprehenderit, molestias.</p>
+                <aside>Artigo escrito por Beltrano.</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Franklin L. Martins (2023)
+    </footer>
+</body>
+</html>

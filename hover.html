@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: gray;
+        }
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: black;
+            width: 100px;
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o hover</h1>
+    <p>posicione o mouse sobre o texto para mostrar o menu</p>
+    <div>
+        Menu para selecionar
+        <p class="menu">primeiro</p>
+        <p class="menu">segundo</p>
+        <p class="menu">terceiro</p>
+    </div>
+</body>
+</html>

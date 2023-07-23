@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade</title>
+    <style>
+        body{
+            background-color: rgb(177, 167, 167);
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p{
+            text-indent: 30px;
+            line-height: 1.5em;
+            margin: 15px 0px;
+        }
+        header{
+            background-image: linear-gradient(to top, rgb(141, 135, 135), rgb(233, 183, 183));
+            color: black;
+            text-align: center;
+            height: 180px;
+            padding: 17px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px 2px black;
+        }
+        header > h1{
+            margin: 0;
+            text-decoration: underline;
+            text-shadow: 1px 1px 2px black;
+        }
+        nav > a{
+            margin-right: 15px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav > a:hover{
+            background-color: rgb(222, 240, 60);
+            color: rgb(4, 61, 4);
+            font-weight: bolder;
+            padding: 5px;
+            transition-duration: 0.6s;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        article{
+            margin-top: 20px;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: antiquewhite;
+            box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.342);
+        }
+        footer{
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background-color: rgb(32, 32, 32);
+            color: antiquewhite;
+            border: 1px solid rgb(245, 239, 239);
+            border-radius: 15px;
+            margin-top: 15px;
+        }
+        div.video{
+            background-color: black;
+            margin:0px -20px 30px -20px;
+            padding: 20px;
+            padding-bottom: 55%;
+            position: relative;
+        }
+        div > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título do cabeçalho</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab commodi, blanditiis perferendis, at aut cum nihil enim quis, eius neque molestiae quidem iusto cupiditate laudantium dolores eos beatae soluta ipsam?</p>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+            <a href="#">Ajuda</a>
+        </nav>
+    </header>
+    <main>
+    <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium excepturi animi fuga quam omnis consequuntur cum, dolores rem, possimus beatae nostrum suscipit hic, nulla veritatis atque magni saepe perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum distinctio, repellendus voluptas velit in atque totam sit corrupti consequatur blanditiis aut ipsam praesentium a tempore, eligendi doloremque quam, ad laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla illo laboriosam inventore distinctio explicabo placeat commodi repudiandae blanditiis adipisci saepe fugiat veniam, architecto nam, reiciendis fugit repellendus fuga. Quibusdam, aliquam?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/paisagem1.jpg">
+            <img src="imagens/paisagem2.jpg" alt="paisagem" width="100%">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat neque iusto delectus culpa ratione ipsam officia eaque, libero ullam in ab repellat temporibus provident! Fugit nostrum itaque corrupti amet repellendus?</p>
+    </main>
+    <article>
+        <h2>Titulo do Artigo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam tempore ullam, adipisci quaerat quis dolorem omnis perspiciatis suscipit voluptatem at mollitia distinctio labore eos? Accusantium harum vel ratione blanditiis?</p>
+        <img src="imagens/paisagem4.jpg" alt="paisagem" width="100%">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laboriosam tenetur est reprehenderit voluptatem fuga vero repudiandae vel expedita consequatur quam porro ad error quidem sed accusamus adipisci, eius corporis!</p>
+
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/CvkXywpw-Oo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui sed officiis molestias labore quos atque aliquid maxime ullam numquam, obcaecati quidem sequi. Voluptate, architecto consequuntur vel eligendi delectus perspiciatis?</p>
+    </article>
+    <footer>
+        <p>Criado por Franklin L. Martins.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@font-face {
+    font-family: Richard;
+    src: url(fonts/Ace-Richard.ttf) format('truetype');
+}
+@font-face {
+    font-family: Brioche;
+    src: url(fonts/Brioche.otf) format('opentype');
+}
+:root{
+--cor1: #348888;
+--cor2: #22BABB;
+--cor3: #9EF8EE;
+--cor4: #FA7F08;
+--cor5: #F24405;
+--fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+--fonte-destaque: Richard, cursive;
+--fonte-alternativa1: 'Crimson Text', serif;
+--fonte-alternativa2: 'Lumanosimo', cursive;
+--fonte-alternativa3: Brioche, cursive;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor2), var(--cor1));
+}
+h1{
+    font-family: var(--fonte-alternativa2);
+}
+h2{
+    font-family: var(--fonte-destaque);
+}
+h3{
+    font-family: var(--fonte-alternativa3);
+}
+p{
+    font-family: var(--fonte-padrao);
+}
