@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(to left, white, rgba(41, 35, 35, 0.568));
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pagina{
+    color: black;
+}
+h1{
+    color: rgb(44, 4, 4);
+    text-shadow: 1px 1px 1px black;
+}
+h2{
+    color: rgb(35, 39, 35);
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+h3{
+    font-size:x-large;
+}
+h3 > a{
+    color: black;
+}
+div{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#frank:hover{
+    background-color: rgb(49, 49, 49);
+    width: 300px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px black;
+    margin-bottom: 30px;
+}
+#frank h2{
+    color: white;
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+}
+footer{
+    margin-top: 30px;
+}
+footer a{
+    color: black;
+}
+.branco{
+    color: white;
+}
