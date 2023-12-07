@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franklin Martins</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1,
+    h2 {
+      color: #333;
+    }
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .gallery img {
+      flex-basis: calc(33.33% - 10px);
+      margin-bottom: 10px;
+    }
+    footer{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Franklin Martins - Página Pessoal</h1>
+  </header>
+  <section>
+    <h2>Sobre Mim</h2>
+    <p>Olá! Meu nome é Franklin Martins, tenho 40 anos, sou casado e moro em Ribeirão Preto, SP. Trabalho na área de segurança
+      pública há 22 anos e atualmente estou cursando o segundo ano de Engenharia da Computação pela UNIVESP.</p>
+    <h2>Formação Acadêmica</h2>
+    <p>Além da minha experiência na área de segurança pública, também tenho formação em Direito pelo Centro Universitário
+      Moura Lacerda, estudei Química na USP de Ribeirão Preto e realizei um curso de Licenciatura em Ciências pela
+      UNIVESP.</p>
+    <h2>Interesses Profissionais</h2>
+    <p>Estou aprendendo linguagens de programação como PYTHON, JAVA, JAVASCRIPT, C/C++. Tenho conhecimentos em HTML5 e
+        CSS3, e gosto de estudar programação e design de páginas na internet. Para programar utilizo IDEs como VS Code, NetBeans, IntelliJ Idea e Code Blocks.</h2>
+    <p>Meus hobbies incluem pescar, viajar para a praia, frequentar bares noturnos com amigos e familiares. Além disso, sou
+        cervejeiro caseiro e aprecio cervejas artesanais. Tenho três cachorros e duas gatas, animais de estimação que
+        alegram minha vida.</p>
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery">
+      <img src="cachorro1.jpg" alt="Meus pets">
+      <img src="praia1.jpg" alt="Na praia">
+      <img src="cerveja1.jpg" alt="Brinde à vida">
+    </div>
+    <h2>Redes Sociais</h2>
+    <p>Conecte-se comigo nas redes sociais:
+      <br>
+      <a href="https://instagram.com/franklinlem" target="_blank">Instagram</a>,
+      <a href="https://facebook.com/franklinlem" target="_blank">Facebook</a>.
+    </p>
+  </section>
+  <footer>
+    <p>&copy; Franklin Martins - 2023<NAME></p>
+  </footer>
+  <script>
+    // Adiciona uma interatividade simples (pode ser expandida conforme necessário)
+    window.alert('Bem-vindo a minha página pessoal!')
+    const images = document.querySelectorAll('.gallery img');
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        alert(`Você clicou em: ${img.alt}`);
+      });
+    });
+  </script>
+</body>
+</html>
