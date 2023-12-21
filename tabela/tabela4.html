@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo de Tabelas</title>
+    <style>
+        body {
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          background-color: azure;
+        }
+        h1{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        tr>th{
+            background-color: gray;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Mesclagem de Células</h1>
+    <table>
+        <caption>Título da Tabela</caption>
+        <tr>
+            <th>coluna A</th>
+            <th colspan="2">coluna B</th>
+            <!--<th>coluna C</th>-->
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <!--<td>I</td>-->
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <!--<td>L</td>-->
+        </tr>
+    </table>
+    <p>Fonte: Curso em Video</p>
+    <footer>
+        <p>&copy Franklin Martins 2023</p>
+    </footer>
 </body>
 </html>
