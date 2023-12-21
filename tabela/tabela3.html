@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, rgb(246, 241, 83), rgb(89, 163, 89));
+        }
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            text-shadow: 1px 1px 2px white;
+        }
+        p{
+            text-indent: 20px;
+        }
+        caption{
+            font-size: 1em;
+            font-weight: bold;
+            background-color: rgb(27, 243, 171);
+        }
+        table{
+            margin-left: 20px;
+            width: 340px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 4px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody > tr:nth-child(2n-1){
+            background-color: bisque;
+        }
+        .pop{
+            text-align: right;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+            CAPTION
+    -->
+    <table>
+        <caption>População dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="uf">São Paulo</td>
+                <td class="pop">44.411.238</td>
+            </tr>
+            <tr>
+                <td class="uf">Minas Gerais</td>
+                <td class="pop">20.538.718</td>
+            </tr>
+            <tr>
+                <td class="uf">Rio de Janeiro</td>
+                <td class="pop">16.054.524</td>
+            </tr>
+            <tr>
+                <td class="uf">Bahia</td>
+                <td class="pop">14.141.626</td>
+            </tr>
+            <tr>
+                <td class="uf">Paraná</td>
+                <td class="pop">11.444.380</td>
+            </tr>
+            <tr>
+                <td class="uf">Rio Grande do Sul</td>
+                <td class="pop">10.882.965</td>
+            </tr>
+            <tr>
+                <td class="uf">Pernambuco</td>
+                <td class="pop">9.058.931</td>
+            </tr>
+            <tr>
+                <td class="uf">Ceará</td>
+                <td class="pop">8.794.957</td>
+            </tr>
+            <tr>
+                <td class="uf">Pará</td>
+                <td class="pop">8.121.025</td>
+            </tr>
+            <tr>
+                <td class="uf">Santa Catarina</td>
+                <td class="pop">7.610.361</td>
+            </tr>
+            <tr>
+                <td class="uf">Goiás</td>
+                <td class="pop">7.056.495</td>
+            </tr>
+            <tr>
+                <td class="uf">Maranhão</td>
+                <td class="pop">6.775.805</td>
+            </tr>
+            <tr>
+                <td class="uf">Paraíba</td>
+                <td class="pop">3.974.687</td>
+            </tr>
+            <tr>
+                <td class="uf">Amazonas</td>
+                <td class="pop">3.941.613</td>
+            </tr>
+            <tr>
+                <td class="uf">Espírito Santos</td>
+                <td class="pop">3.833.712</td>
+            </tr>
+            <tr>
+                <td class="uf">Mato Grosso</td>
+                <td class="pop">3.658.649</td>
+            </tr>
+            <tr>
+                <td class="uf">Rio Grande do Norte</td>
+                <td class="pop">3.302.729</td>
+            </tr>
+            <tr>
+                <td class="uf">Piauí</td>
+                <td class="pop">3.272.199</td>
+            </tr>
+            <tr>
+                <td class="uf">Alagoas</td>
+                <td class="pop">3.127.683</td>
+            </tr>
+            <tr>
+                <td class="uf">Distrito Federal</td>
+                <td class="pop">2.817.381</td>
+            </tr>
+            <tr>
+                <td class="uf">Mato Grosso do Sul</td>
+                <td class="pop">2.757.013</td>
+            </tr>
+            <tr>
+                <td class="uf">Sergipe</td>
+                <td class="pop">2.209.558</td>
+            </tr>
+            <tr>
+                <td class="uf">Rondônia</td>
+                <td class="pop">1.581.460</td>
+            </tr>
+            <tr>
+                <td class="uf">Tocantins</td>
+                <td class="pop">1.511.460</td>
+            </tr>
+            <tr>
+                <td class="uf">Acre</td>
+                <td class="pop">830.018</td>
+            </tr>
+            <tr>
+                <td class="uf">Amapá</td>
+                <td class="pop">733.759</td>
+            </tr>
+                <td class="uf">Roraima</td>
+                <td class="pop">636.707</td>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+                <td class="pop">203.062.512</td>
+        </tfoot>
+    </table>
+    <p>Fonte: <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o">Wikipedia</a></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem delectus obcaecati saepe impedit non tempora sunt quia rem dignissimos quos quisquam quaerat deleniti voluptatum cupiditate rerum totam, ratione modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis nihil rerum, aliquid nisi dolorem. Praesentium sint nobis a voluptatem rerum voluptate. Aspernatur incidunt beatae deleniti quia ea facilis tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente consectetur labore, iste doloremque ipsum quo maiores ipsam eaque numquam at accusantium libero, debitis ullam veniam, molestiae voluptatem voluptas dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati id illum blanditiis inventore adipisci iusto illo alias unde culpa, maiores nemo? Quo eligendi impedit recusandae repudiandae ex dolore quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos fuga dolores amet neque natus, beatae necessitatibus aperiam quibusdam repellendus deserunt asperiores consequatur fugit! Natus porro ipsum ut nisi. Tempora, doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem delectus obcaecati saepe impedit non tempora sunt quia rem dignissimos quos quisquam quaerat deleniti voluptatum cupiditate rerum totam, ratione modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis nihil rerum, aliquid nisi dolorem. Praesentium sint nobis a voluptatem rerum voluptate. Aspernatur incidunt beatae deleniti quia ea facilis tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente consectetur labore, iste doloremque ipsum quo maiores ipsam eaque numquam at accusantium libero, debitis ullam veniam, molestiae voluptatem voluptas dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati id illum blanditiis inventore adipisci iusto illo alias unde culpa, maiores nemo? Quo eligendi impedit recusandae repudiandae ex dolore quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos fuga dolores amet neque natus, beatae necessitatibus aperiam quibusdam repellendus deserunt asperiores consequatur fugit! Natus porro ipsum ut nisi. Tempora, doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem delectus obcaecati saepe impedit non tempora sunt quia rem dignissimos quos quisquam quaerat deleniti voluptatum cupiditate rerum totam, ratione modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis nihil rerum, aliquid nisi dolorem. Praesentium sint nobis a voluptatem rerum voluptate. Aspernatur incidunt beatae deleniti quia ea facilis tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente consectetur labore, iste doloremque ipsum quo maiores ipsam eaque numquam at accusantium libero, debitis ullam veniam, molestiae voluptatem voluptas dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati id illum blanditiis inventore adipisci iusto illo alias unde culpa, maiores nemo? Quo eligendi impedit recusandae repudiandae ex dolore quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos fuga dolores amet neque natus, beatae necessitatibus aperiam quibusdam repellendus deserunt asperiores consequatur fugit! Natus porro ipsum ut nisi. Tempora, doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem delectus obcaecati saepe impedit non tempora sunt quia rem dignissimos quos quisquam quaerat deleniti voluptatum cupiditate rerum totam, ratione modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis nihil rerum, aliquid nisi dolorem. Praesentium sint nobis a voluptatem rerum voluptate. Aspernatur incidunt beatae deleniti quia ea facilis tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente consectetur labore, iste doloremque ipsum quo maiores ipsam eaque numquam at accusantium libero, debitis ullam veniam, molestiae voluptatem voluptas dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati id illum blanditiis inventore adipisci iusto illo alias unde culpa, maiores nemo? Quo eligendi impedit recusandae repudiandae ex dolore quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos fuga dolores amet neque natus, beatae necessitatibus aperiam quibusdam repellendus deserunt asperiores consequatur fugit! Natus porro ipsum ut nisi. Tempora, doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem delectus obcaecati saepe impedit non tempora sunt quia rem dignissimos quos quisquam quaerat deleniti voluptatum cupiditate rerum totam, ratione modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis nihil rerum, aliquid nisi dolorem. Praesentium sint nobis a voluptatem rerum voluptate. Aspernatur incidunt beatae deleniti quia ea facilis tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente consectetur labore, iste doloremque ipsum quo maiores ipsam eaque numquam at accusantium libero, debitis ullam veniam, molestiae voluptatem voluptas dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati id illum blanditiis inventore adipisci iusto illo alias unde culpa, maiores nemo? Quo eligendi impedit recusandae repudiandae ex dolore quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos fuga dolores amet neque natus, beatae necessitatibus aperiam quibusdam repellendus deserunt asperiores consequatur fugit! Natus porro ipsum ut nisi. Tempora, doloribus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem delectus obcaecati saepe impedit non tempora sunt quia rem dignissimos quos quisquam quaerat deleniti voluptatum cupiditate rerum totam, ratione modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae blanditiis nihil rerum, aliquid nisi dolorem. Praesentium sint nobis a voluptatem rerum voluptate. Aspernatur incidunt beatae deleniti quia ea facilis tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum sapiente consectetur labore, iste doloremque ipsum quo maiores ipsam eaque numquam at accusantium libero, debitis ullam veniam, molestiae voluptatem voluptas dicta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati id illum blanditiis inventore adipisci iusto illo alias unde culpa, maiores nemo? Quo eligendi impedit recusandae repudiandae ex dolore quasi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos fuga dolores amet neque natus, beatae necessitatibus aperiam quibusdam repellendus deserunt asperiores consequatur fugit! Natus porro ipsum ut nisi. Tempora, doloribus.</p>
+    <footer>
+      <p><a href="https://franklem.com">Franklem.com</a> 2023 &copy;</p>
+    </footer>
+</body>
+</html>
