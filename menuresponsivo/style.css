@@ -12,6 +12,13 @@ h1{
     font-weight: bolder;
     padding: 10px;
 }
+span#burguer{
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
 article > p{
     text-align: justify;
     text-indent: 30px;
