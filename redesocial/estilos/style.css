@@ -30,10 +30,24 @@ section#telefone{
 }
 iframe#tela{
     position: relative;
-    
     top: 80px;
     left: 20px;
     width: 270px;
     height: 470px;
-
+}
+section#redes-sociais{
+    text-align: right;
+}
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2xp 5px rgba(0, 0, 0, 0.433);
+    box-sizing: border-box;
+}
+section#redes-sociais img:hover{
+    border: 3px solid rgba(255, 255, 255, 0.67);
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.766);
+    transition: transform .3s, border .6s;
 }
