@@ -19,6 +19,11 @@ span#burguer{
     text-align: center;
     padding: 10px;
 }
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 article > p{
     text-align: justify;
     text-indent: 30px;
@@ -29,7 +34,7 @@ header{
     display: block;
 }
 menu{
-    display: block;
+    display: none;
 }
 menu > ul{
     list-style-type: none;
