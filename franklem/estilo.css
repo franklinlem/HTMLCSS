@@ -68,3 +68,9 @@ footer a{
     color: white;
     line-height: 2em;
 }
+#trabalhos > img{
+    width: 80vw;
+}
+#trabalhos > a{
+    color: black;
+}
