@@ -4,5 +4,6 @@
     },
     "liveServer.settings.port": 5501,
     "editor.wordWrap": "on",
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "onWindowChange",
+    "liveServer.settings.CustomBrowser": "microsoft-edge"
 }
