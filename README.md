@@ -2,4 +2,4 @@
  Aulas de HTML E CSS.
  Estou aprendendo a criar sites e agora vou começar a gerenciar meus repositórios.
  
-franklinlem.github.io/HTMLCSS/franklem/linksdapc/atalhos.html
+https://franklinlem.github.io/HTMLCSS/franklem/linksdapc/atalhos.html
