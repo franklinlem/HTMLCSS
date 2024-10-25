@@ -19,32 +19,33 @@
             <h3>Verifique o clima de uma cidade:  </h3>
             <div class="form-input-container">
                 <input type="text" id="city-input" placeholder="Digite o nome da cidade">
-                <button id="search">
+                <button id="search" onclick="click">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
-        <div id="weather-data">
+        <div id="weather-data" class="hide">
             <h2><i class="fa-solid fa-location-dot"></i>
-                <span class="city">Ribeirão Preto</span>
-                <img src="https://flagsapi.com/BR/shiny/64.png" alt="bandeira do país" id="country">
+                <span id="city"></span>
+                <img src="#" alt="bandeira do país" id="country">
             </h2>
-            <p id="temperature"><span>38</span> &deg;C</p>
+            <p id="temperature"><span></span> &deg;C</p>
             <div id="description-container">
-                <p id="description">Ensolarado</p>
-                <img src="http://openweathermap.org/img/wn/01d.png" alt="Condição do Tempo" id="weather-icon">
+                <p id="description"></p>
+                <img src="#" alt="Condição do Tempo" id="weather-icon">
             </div>
             <div id="details-container">
-                <p id="umidity">
+                <p id="humidity">
                     <i class="fa-solid fa-droplet"></i>
-                    <span>40%</span>
+                    <span></span>
                 </p>
                 <p id="wind">
                     <i class="fa-solid fa-wind"></i>
-                    <span>10km/h</span>
+                    <span></span>
                 </p>
             </div>
         </div>
+        <footer id="rodape">by <a href="mailto:"><strong>franklinlem@yahoo.com</strong></a></footer>
     </div>
     <script src="script.js" defer></script>
 </body>

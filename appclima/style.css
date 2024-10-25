@@ -92,14 +92,25 @@ h1{
     margin: 0.6rem 0;
 }
 
+#description{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 #details-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#details-container #umidity{
+#details-container #humidity{
     border-right: 2px solid black;
     margin: 0.6rem;
     padding: 0.6rem;
+}
+
+#rodape{
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
 }
